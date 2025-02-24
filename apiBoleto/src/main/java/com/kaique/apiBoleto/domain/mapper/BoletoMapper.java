@@ -1,6 +1,6 @@
 package com.kaique.apiBoleto.domain.mapper;
 
-import com.kaique.apiBoleto.avro.Boleto;
+import com.kaique.avro.Boleto;
 
 public class BoletoMapper {
 

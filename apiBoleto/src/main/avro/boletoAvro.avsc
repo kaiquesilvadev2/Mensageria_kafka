@@ -1,6 +1,6 @@
 {
     "type": "record",
-    "namespace": "com.kaique.apiBoleto.avro",
+    "namespace": "com.kaique.avro",
     "name": "Boleto",
     "fields": [
         {
