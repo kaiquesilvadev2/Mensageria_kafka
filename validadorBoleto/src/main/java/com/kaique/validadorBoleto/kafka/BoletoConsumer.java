@@ -23,8 +23,9 @@ public class BoletoConsumer  {
 
     @KafkaListener(topics = "${spring.kafka.topico-boleto}", groupId = "${spring.kafka.consumer.group-id}")
     public void consomeBoleto(Boleto boleto, Acknowledgment ack) throws InterruptedException {
-     LOGGER.info(String.format("Consumindo mensagem -> %s", boleto));
-       // validarBoletoService.validar(BoletoMapper.toEntity(boleto));
+    	
+        LOGGER.info(String.format("Consumindo mensagem -> %s", boleto));
+        validarBoletoService.validar(BoletoMapper.toEntity(boleto));
         ack.acknowledge();
     }
 }
